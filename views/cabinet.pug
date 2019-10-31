@@ -1,0 +1,23 @@
+extends layout
+
+block variables
+  - var title = "Cabinet"
+
+block content
+  include ../cabinet.html
+
+block links
+  if userStatus == true
+    a.p-2(href="/dashboard") Dashboard
+    a.p-2(href="/cabinet") Cabinet
+    a.p-2#logout_link(href="/logout") Logout
+  else
+    a.p-2#google_link(href="/login") Log In
+
+block scripts
+  script(src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js")
+  script(src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js")
+  script(src="https://www.gstatic.com/firebasejs/6.1.0/firebase-firestore.js")
+  script(src="/dist/app_login.js")
+  script(src="/dist/cabinet.js")
+  script(src="/dist/app_cabinet.js")

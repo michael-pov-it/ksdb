@@ -1,0 +1,15 @@
+extends layout
+
+block variables
+  - var title = "Unauthenticated"
+
+block scripts
+  script(src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js")
+  script(src="https://www.gstatic.com/firebasejs/6.1.0/firebase-firestore.js")
+  script(src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js")
+  script(src="/dist/app_login.js")
+
+block content
+  h2.text-center You Must Log In to View This Page
+  p.text-center.
+    You must be signed in to view this page. Please #[a#google_link(href="/login", title="Login") login or register] to view this page.

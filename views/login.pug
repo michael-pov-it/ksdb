@@ -1,0 +1,14 @@
+extends layout
+
+block variables
+  - var title = "Login"
+
+block content
+  include ../login.html
+
+block scripts
+  script(src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js")
+  script(src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js")
+  script(src="https://www.gstatic.com/firebasejs/6.1.0/firebase-firestore.js")
+  script(src="/dist/app_login.js")
+  script(src="/dist/login.js")
