@@ -20,7 +20,7 @@
     "cors": "^2.8.5",
     "express-session": "^1.15.6",
     "firebase": "^6.1.0",
-    "firebase-admin": "^7.3.0",
+    "firebase-admin": "^11.4.1",
     "vue": "^2.5.11",
     "webpack": "^4.33.0"
   },
